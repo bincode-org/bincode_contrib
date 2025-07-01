@@ -1,0 +1,25 @@
+[package]
+name = "bincode_contrib_derive"
+version = "0.0.1"
+edition = "2024"
+authors = ["Victor Koenders <bincode@trangar.com>"]
+rust-version = "1.85.0"
+publish = true
+repository = "https://github.com/bincode-org/bincode_contrib"
+categories = ["encoding", "network-programming"]
+keywords = [
+    "bincode",
+    "contrib",
+    "binary",
+    "encode",
+    "decode",
+    "serialize",
+    "deserialize",
+]
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+virtue = "0.0.18"

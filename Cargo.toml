@@ -1,0 +1,38 @@
+[workspace]
+members = ["derive"]
+
+[package]
+name = "bincode_contrib"
+version = "0.0.1"
+authors = ["Victor Koenders <bincode@trangar.com>"]
+exclude = ["logo.svg", "examples/*", ".gitignore", ".github/"]
+rust-version = "1.85.0"
+
+publish = true
+
+repository = "https://github.com/bincode-org/bincode_contrib"
+documentation = "https://docs.rs/bincode_contrib"
+readme = "./readme.md"
+categories = ["encoding", "network-programming"]
+keywords = [
+    "bincode",
+    "contrib",
+    "binary",
+    "encode",
+    "decode",
+    "serialize",
+    "deserialize",
+]
+
+license = "MIT"
+description = "A community contribution crate for common extensions to bincode"
+
+edition = "2021"
+
+[dependencies]
+bincode = "2"
+bincode_contrib_derive = { path = "derive" }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
