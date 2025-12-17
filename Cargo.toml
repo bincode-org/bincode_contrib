@@ -30,7 +30,7 @@ description = "A community contribution crate for common extensions to bincode"
 edition = "2021"
 
 [dependencies]
-bincode = "2"
+bincode = "3"
 bincode_contrib_derive = { path = "derive" }
 
 [package.metadata.docs.rs]
